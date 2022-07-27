@@ -52,6 +52,12 @@ export function createHeader(phoneNumber) {
       position: relative
       align-self: center;
     }
+
+    @media screen and (max-width: 770px) {
+      .truck-logo-container {
+        display: none;
+      }
+    }
   
     .nav-container {
       align-self: center;
@@ -125,7 +131,7 @@ export function createHeader(phoneNumber) {
     }
     @media screen and (max-width: 770px) {
       header {
-        padding: 2rem 0 .5rem 0;
+        padding: .5rem 0;
       }
       .burger-menu {
         display: block;

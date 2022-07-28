@@ -34,7 +34,7 @@ export function createHeader(phoneNumber) {
     header {
       width: 95%;
       margin: 0 auto;
-      padding: 1rem 0 0 0;
+      padding: .25rem 0 0 0;
       background-color: var(--black);
       display: flex;
       flex-direction: row;
@@ -42,6 +42,7 @@ export function createHeader(phoneNumber) {
       // font-size: 2rem;
       position: relative;
       letter-spacing: 2px;
+      overflow: hidden;
     }
   
     .logo-container {

@@ -180,12 +180,12 @@ export function createHeader(phoneNumber) {
   <header>
     <div class="logo-container">
       <a href="index.html">
-        <img src="/images/logo-company-name-bee.png" alt="Logo" />
+        <img src="../images/logo-company-name-bee.png" alt="Logo" />
       </a>
     </div>
 
     <div class="truck-logo-container">
-      <img src="/images/logo-truck-header.png" alt="Truck Logo" />
+      <img src="../images/logo-truck-header.png" alt="Truck Logo" />
       <p class="phoneNumberContainer">${phoneNumber}</p>
     </div>
 

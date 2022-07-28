@@ -39,8 +39,9 @@ export function createHeader(phoneNumber) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      font-size: 2rem;
+      // font-size: 2rem;
       position: relative;
+      letter-spacing: 2px;
     }
   
     .logo-container {
@@ -67,21 +68,22 @@ export function createHeader(phoneNumber) {
       text-decoration: none;
       color: var(--faded-white);
       display: inline-block;
-      font-size: 1.6rem;
+      font-size: .75rem;
+      letter-spacing: 4px;
     }
   
     ul {
       list-style-type: none;
       display: flex;
       flex-direction: row;
-      gap: 5rem;
+      gap: 1rem;
     }
 
     @media screen and (max-width: 1200px) {
-      ul {
-        font-size: 2rem;
-        gap: 2rem
-      }
+      // ul {
+      //   font-size: 1.5rem;
+      //   gap: 2rem
+      // }
     }
 
     .navLink {
@@ -97,15 +99,10 @@ export function createHeader(phoneNumber) {
     .phoneNumberContainer {
       text-align: center;
       // transform: translateY(-30rem);
-      transform: translate(5rem, -3rem);
+      transform: translate(2rem, -.75rem);
     }  
 
-    @media screen and (max-width: 500px) {
-      .phoneNumberContainer {
-        font-size: 1.5rem;
-        transform: translateY(-1rem);
-      }
-    }
+
 
     /* BURGER MENU SETUP NO VISIABLE ON LARGE SCREENS */
     .burger-menu {
@@ -158,7 +155,7 @@ export function createHeader(phoneNumber) {
         align-items: center;
       }
       nav a {
-        font-size: 2rem;
+        font-size: 1rem;
       }
       .slide {
         transform: translateX(0);

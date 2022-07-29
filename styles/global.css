@@ -10,6 +10,37 @@
   --accent: #1a9bf0;
 }
 
+/* RESETS */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--white);
+  color: var(--white);
+  /* font-size: 62.5%; */
+  font-size: calc(0.75em + 1vw)
+  /* font-size: calc(15px + 0.390625vw); */
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* UTLITY CLASSES */
 .bold {
   font-weight: 700;
@@ -105,36 +136,6 @@
   border: 2px solid var(--accent);
 }
 
-/* RESETS */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Oswald', sans-serif;
-  background-color: var(--white);
-  color: var(--white);
-  /* font-size: 62.5%; */
-  font-size: calc(0.75em + 1vw)
-  /* font-size: calc(15px + 0.390625vw); */
-}
-
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
 
 /* HOME PAGE */
 .hero {
@@ -156,7 +157,7 @@ img {
 
 .hero .text {
   margin: 0 auto;
-  padding: 2rem 1rem 0;
+  padding: 2rem 2.5% 0;
   max-width: 1600px;
   width: 100%;
   height: 80%;

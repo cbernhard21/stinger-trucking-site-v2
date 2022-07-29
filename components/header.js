@@ -46,13 +46,14 @@ export function createHeader(phoneNumber) {
     }
   
     .logo-container {
-      max-width: 20rem;
+      max-width: 200px;
       align-self: center;
     }
   
     .truck-logo-container {
       position: relative
       align-self: center;
+      max-width: 500px
     }
 
     @media screen and (max-width: 770px) {
@@ -99,8 +100,8 @@ export function createHeader(phoneNumber) {
 
     .phoneNumberContainer {
       text-align: center;
-      // transform: translateY(-30rem);
-      transform: translate(2rem, -.75rem);
+      font-size: .75rem;
+      transform: translate(2rem, -1.25rem);
     }  
 
 

@@ -86,6 +86,10 @@ img {
   justify-content: space-between;
 }
 
+.flex-end {
+  justify-content: flex-end;
+}
+
 .current {
   color: var(--white);
 }
@@ -136,13 +140,20 @@ img {
   border: 2px solid var(--accent);
 }
 
+.container {
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
 
 /* HOME PAGE */
 .hero {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url(../images/truck-1-min.jpg);
-  height: 80vh;
+  height: 95vh;
   align-self: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,4 +194,59 @@ img {
 
 .hero .btn {
   margin-right: 3rem;
+}
+
+/* ABOUT SECTION */
+.about {
+  background-image: url(../images/truck-2-min.jpg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding: 2rem;
+}
+
+.subheading {
+  font-size: 1.25rem;
+}
+
+.text-box {
+  width: 60ch;
+  font-size: .5rem;
+  background-color: rgba(20, 20, 20, 0.9);
+  align-self: flex-start;
+  padding: 1rem 2.5rem 1rem 1rem;
+  font-weight: 300;
+}
+
+.text-box h2 {
+  margin-bottom: .75rem;
+}
+
+.text-box p {
+  margin-bottom: 1.5rem;
+}
+
+.text-box .btn {
+  display: inline-block;
+  font-size: .5rem;
+}
+
+
+/* SERVICES SECTION */
+.services {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/truck-3-min.jpg);
+  height: 80vh;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* CONTACT SECTION */
+.contact {
+  color: var(--black);
+  height: 80vh;
 }

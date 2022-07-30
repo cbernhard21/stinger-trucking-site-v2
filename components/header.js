@@ -21,7 +21,7 @@ export function createHeader(phoneNumber) {
   const navLinks = routes
     .map((route) => {
       return `
-      <li><a href="${route.link}.html" class="navLink">${route.label.toUpperCase()}</a></li>
+      <li><a href="${route.link}.html" class="navLink">${route.label}</a></li>
     `;
     })
     .join('');
@@ -70,8 +70,9 @@ export function createHeader(phoneNumber) {
       text-decoration: none;
       color: var(--faded-white);
       display: inline-block;
-      font-size: .75rem;
-      letter-spacing: 4px;
+      font-size: .6rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
   
     ul {
@@ -100,7 +101,7 @@ export function createHeader(phoneNumber) {
 
     .phoneNumberContainer {
       text-align: center;
-      font-size: .75rem;
+      font-size: .6rem;
       transform: translate(2rem, -1.25rem);
     }  
 

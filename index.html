@@ -69,18 +69,18 @@
 
           <form action="#" class="contact-form">
             <div class="form-group flex flex-col">
-              <label for="name" aria-placeholder="Your Name">Full Name</label>
-              <input type="text" id="name" placeholder="Your Name">
+              <input type="text" id="name" class="input" required>
+              <label for="name" class="contact-label">Your Name</label>
             </div>
 
             <div class="form-group flex flex-col">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="Your Email Address">
+              <input type="email" id="email" class="input" required>
+              <label for="email" class="contact-label">Email Address</label>
             </div>
 
             <div class="form-group flex flex-col">
-              <label for="email">Message</label>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <textarea id="message" class="input" cols="30" rows="10"></textarea>
+              <label for="message" class="message-label">Message</label>
             </div>
 
             <button type="submit" class="btn">Submit</button>

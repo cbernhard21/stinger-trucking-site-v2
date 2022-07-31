@@ -291,8 +291,47 @@ img {
 
 .contact p {
   font-size: .6rem;
+  margin-bottom: 1rem;
 }
 
 .contact-form {
   max-width: 800px;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  padding-left: .2rem;
+  position: relative;
+}
+
+.contact-label {
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: .5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transition: all .2s ease-in;
+}
+
+.input {
+  padding-bottom: .2rem;
+  font-size: .6rem;
+  border: none;
+  border-bottom: 1px solid var(--black)
+}
+
+.input:focus {
+  outline: transparent;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  color: var(--black);
+  top: -20px;
+  font-size: .4rem;
+}
+
+label[for="message"] {
+  color: red;
 }

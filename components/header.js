@@ -102,7 +102,8 @@ export function createHeader(phoneNumber) {
     .phoneNumberContainer {
       text-align: center;
       font-size: .6rem;
-      transform: translate(2rem, -1.25rem);
+      margin: -1rem;
+      transform: translateX(2rem);
     }  
 
 

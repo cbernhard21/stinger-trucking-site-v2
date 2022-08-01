@@ -1,4 +1,6 @@
 import { createHeader } from '../components/header.js';
+import { createFooter } from '../components/footer.js';
+
 
 function insertPhoneNumber() {
   const phoneNumber = '123-555-5555';
@@ -15,4 +17,5 @@ function insertPhoneNumber() {
 // RUN ALL GLOBAL FUNCTIONS AFTER PAGE LOADS
 
 createHeader(insertPhoneNumber());
+createFooter(insertPhoneNumber());
 insertPhoneNumber();

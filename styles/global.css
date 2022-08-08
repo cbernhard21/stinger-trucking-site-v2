@@ -9,6 +9,9 @@
   --white: #fdfdfd;
   --faded-white: rgba(255, 255, 255, 0.5);
   --accent: #1a9bf0;
+  /* --yellow: #eef112; */
+  /* --yellow: #f7d008; */
+  --yellow: #ecff00;
 }
 
 /* RESETS */
@@ -26,6 +29,7 @@ html {
   background-color: var(--white);
   color: var(--white);
   font-size: 62.5%;
+  scroll-behavior: smooth;
   /* font-size: calc(0.75em + 1vw); */
   /* font-size: calc(15px + 0.390625vw); */
 }
@@ -49,6 +53,13 @@ h6 {
 img {
   max-width: 100%;
   display: block;
+}
+
+a,
+a:visited,
+a:hover,
+a:link {
+  color: var(--white);
 }
 
 /* UTLITY CLASSES */
@@ -78,6 +89,10 @@ img {
 
 .text-accent {
   color: var(--accent);
+}
+
+.text-yellow {
+  color: var(--yellow);
 }
 
 .text-oswald {
@@ -256,6 +271,10 @@ img {
   line-height: 1.8;
 }
 
+.about .text-box p {
+  margin-bottom: 6rem;
+}
+
 .text-box .btn {
   display: inline-block;
   font-size: 1.6rem;
@@ -263,7 +282,7 @@ img {
 
 /* SERVICES SECTION */
 .services {
-  background-image: url(../images/truck-3-min.jpg);
+  background-image: url(../images/truck-10-min.jpg);
 }
 
 .services h3 {
@@ -282,7 +301,7 @@ img {
 /* CONTACT SECTION */
 .contact {
   color: var(--black);
-  padding: 4rem 2rem;
+  padding: 9rem 3rem;
   font-size: 1.6rem;
 }
 
@@ -335,4 +354,18 @@ img {
   color: var(--black);
   top: -20px;
   font-size: 1.2rem;
+}
+
+.contact-btn {
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+  cursor: pointer;
 }

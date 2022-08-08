@@ -25,8 +25,8 @@ html {
   font-family: 'Inter', sans-serif;
   background-color: var(--white);
   color: var(--white);
-  /* font-size: 62.5%; */
-  font-size: calc(0.75em + 1vw)
+  font-size: 62.5%;
+  /* font-size: calc(0.75em + 1vw); */
   /* font-size: calc(15px + 0.390625vw); */
 }
 
@@ -37,9 +37,13 @@ body {
   line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Oswald', sans-serif;
-  
 }
 
 img {
@@ -135,14 +139,14 @@ img {
 .btn {
   text-decoration: none;
   display: inline-block;
-  padding: .5rem 1.25rem;
-  font-size: .75rem;
+  padding: 1rem 1.75rem;
+  font-size: 1.6rem;
   letter-spacing: 1.5px;
   color: var(--white);
   background-color: var(--accent);
   border: 2px solid var(--accent);
   border-radius: 5px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -153,7 +157,7 @@ img {
 
 .inverse {
   background-color: transparent;
-  color: var(--accent)
+  color: var(--accent);
 }
 
 .inverse:hover {
@@ -171,7 +175,6 @@ img {
 .subheading {
   font-size: 1.3rem;
 }
-
 
 /* HOME PAGE */
 .hero {
@@ -198,7 +201,6 @@ img {
   width: 100%;
   height: 80%;
   letter-spacing: 4px;
-  /* border: 1px solid red; */
 }
 
 @media screen and (max-width: 500px) {
@@ -208,12 +210,12 @@ img {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 10rem;
   font-weight: 400;
 }
 
 .hero h2 {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 300;
 }
 
@@ -222,12 +224,14 @@ img {
 }
 
 /* ABOUT SECTION */
-.about, .services {
+.about,
+.services {
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  padding: 2rem;
+  padding: 3rem;
+  font-size: 2rem;
 }
 
 .about {
@@ -237,61 +241,58 @@ img {
 .text-box {
   background-color: rgba(20, 20, 20, 0.9);
   align-self: flex-start;
-  padding: 1rem 2.5rem 1rem 1rem;
+  padding: 2rem;
   font-weight: 300;
 }
 
 .text-box h2 {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
+  font-size: 3.6rem;
 }
 
 .text-box p {
   max-width: 48ch;
   margin-bottom: 1.5rem;
   line-height: 1.8;
-  font-size: .6rem;
 }
 
 .text-box .btn {
   display: inline-block;
-  font-size: .5rem;
+  font-size: 1.6rem;
 }
-
 
 /* SERVICES SECTION */
 .services {
   background-image: url(../images/truck-3-min.jpg);
-  font-size: .6rem;
 }
 
 .services h3 {
-  font-size: 1.1rem;
+  font-size: 3rem;
 }
 
 .services .text-box p {
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
 }
 
 .services-list {
   list-style-position: inside;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /* CONTACT SECTION */
 .contact {
   color: var(--black);
-  height: 60vh;
-  padding: 2rem;
+  padding: 4rem 2rem;
+  font-size: 1.6rem;
 }
 
 .contact h2 {
-  font-size: 2rem;
+  font-size: 5.6rem;
   text-transform: uppercase;
 }
 
 .contact p {
-  font-size: .6rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .contact-form {
@@ -299,8 +300,7 @@ img {
 }
 
 .form-group {
-  margin-bottom: 1.2rem;
-  padding-left: .2rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -308,19 +308,19 @@ img {
 .message-label {
   color: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
-  font-size: .5rem;
+  /* font-size: 1.6rem; */
   position: absolute;
   top: 0;
   bottom: 0;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .input,
 .message {
-  padding-bottom: .2rem;
-  font-size: .6rem;
+  padding-bottom: 1rem;
+  /* font-size: 0.6rem; */
   border: none;
-  border-bottom: 1px solid var(--black)
+  border-bottom: 1px solid var(--black);
 }
 
 .input:focus,
@@ -334,6 +334,5 @@ img {
 .message:valid ~ label {
   color: var(--black);
   top: -20px;
-  font-size: .4rem;
+  font-size: 1.2rem;
 }
-

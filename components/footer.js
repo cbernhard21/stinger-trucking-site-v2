@@ -1,14 +1,14 @@
 export function createFooter(phoneNumber) {
-    const footerTemplate = document.createElement('template');
+  const footerTemplate = document.createElement('template');
 
-    footerTemplate.innerHTML = `
+  footerTemplate.innerHTML = `
 
         <style>
             footer {
                 background-color: var(--black);
                 color: var(--white);
-                padding: 1rem 0;
-                font-size: .6rem;
+                padding: 2rem 0;
+                font-size: 1.6rem;
                 width: 100%;
                 text-align: center;
             }
@@ -22,14 +22,14 @@ export function createFooter(phoneNumber) {
         </footer>
     `;
 
-    class Footer extends HTMLElement {
-        constructor() {
-            super();
-        }
-        connectedCallback() {
-            const shadowRoot = this.attachShadow({mode: 'open'});
-            shadowRoot.appendChild(footerTemplate.content.cloneNode(true));
-        }
+  class Footer extends HTMLElement {
+    constructor() {
+      super();
     }
-    customElements.define('footer-component', Footer);
+    connectedCallback() {
+      const shadowRoot = this.attachShadow({ mode: 'open' });
+      shadowRoot.appendChild(footerTemplate.content.cloneNode(true));
+    }
+  }
+  customElements.define('footer-component', Footer);
 }

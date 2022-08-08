@@ -34,12 +34,12 @@ export function createHeader(phoneNumber) {
     header {
       width: 95%;
       margin: 0 auto;
-      padding: .25rem 0 0 0;
+      padding: 1rem 0;
+      font-size: 1.6rem;
       background-color: var(--black);
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      // font-size: 2rem;
       position: relative;
       letter-spacing: 2px;
       overflow: hidden;
@@ -70,7 +70,6 @@ export function createHeader(phoneNumber) {
       text-decoration: none;
       color: var(--faded-white);
       display: inline-block;
-      font-size: .6rem;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
@@ -79,7 +78,7 @@ export function createHeader(phoneNumber) {
       list-style-type: none;
       display: flex;
       flex-direction: row;
-      gap: 1rem;
+      gap: 2rem;
     }
 
     @media screen and (max-width: 1200px) {
@@ -101,9 +100,8 @@ export function createHeader(phoneNumber) {
 
     .phoneNumberContainer {
       text-align: center;
-      font-size: .6rem;
-      margin: -1rem;
-      transform: translateX(2rem);
+      margin: -2.5rem;
+      transform: translateX(3.5rem);
     }  
 
 

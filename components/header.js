@@ -151,13 +151,13 @@ export function createHeader(phoneNumber) {
         transition: transform .5s ease-out;
       }
       ul {
-        height: 80vh;
+        height: 90vh;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
       }
       nav a {
-        font-size: 1rem;
+        font-size: 1.8rem;
       }
       .slide {
         transform: translateX(0);

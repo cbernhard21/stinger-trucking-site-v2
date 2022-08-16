@@ -44,6 +44,12 @@ export function createHeader(phoneNumber) {
       letter-spacing: 2px;
       overflow: hidden;
     }
+
+    @media screen and (max-width: 1150px) {
+      header {
+        font-size: 1.4rem;
+      }
+    }
   
     .logo-container {
       max-width: 200px;
@@ -81,11 +87,10 @@ export function createHeader(phoneNumber) {
       gap: 2rem;
     }
 
-    @media screen and (max-width: 1200px) {
-      // ul {
-      //   font-size: 1.5rem;
-      //   gap: 2rem
-      // }
+    @media screen and (max-width: 1150px) {
+      ul {
+        gap: 1.5rem
+      }
     }
 
     .navLink {

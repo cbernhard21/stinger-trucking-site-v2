@@ -67,23 +67,24 @@
           <h2 class="text-inter light">Contact Us</h2>
           <p>Any questions you have, we’ll answer within 8 hours.</p>
 
-          <form action="#" class="contact-form">
+          <form class="contact-form" action="https://formspree.io/f/xeqdqnvw" method="POST" id="my-form">
             <div class="form-group flex flex-col">
-              <input type="text" id="name" class="input" required />
+              <input type="text" id="name" class="input" name="name" required />
               <label for="name" class="contact-label">Your Name</label>
             </div>
 
             <div class="form-group flex flex-col">
-              <input type="email" id="email" class="input" required />
+              <input type="email" id="email" class="input" name="email" required />
               <label for="email" class="contact-label">Email Address</label>
             </div>
 
             <div class="form-group flex flex-col">
-              <textarea id="message" class="message" cols="30" rows="10" required></textarea>
+              <textarea id="message" class="message" cols="30" rows="10" name="message" required></textarea>
               <label for="message" class="message-label">Message</label>
             </div>
 
-            <button type="submit" class="btn contact-btn">Submit</button>
+            <button type="submit" class="btn contact-btn" id="my-form-button">Submit</button>
+            <p id="my-form-status"></p>
           </form>
         </div>
       </section>

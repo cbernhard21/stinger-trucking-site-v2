@@ -5,8 +5,8 @@ export function createHeader(phoneNumber) {
       label: 'Home',
     },
     {
-      link: 'about',
-      label: 'About',
+      link: 'photos',
+      label: 'Photos',
     },
     {
       link: 'services',

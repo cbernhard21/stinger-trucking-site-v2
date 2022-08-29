@@ -192,6 +192,10 @@ a:link {
   font-size: 1.3rem;
 }
 
+.hidden {
+  display: none;
+} */ */
+
 /* HOME PAGE */
 .hero {
   display: flex;

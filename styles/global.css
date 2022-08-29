@@ -194,7 +194,7 @@ a:link {
 
 .hidden {
   display: none;
-} */ */
+} 
 
 /* HOME PAGE */
 .hero {
@@ -207,6 +207,7 @@ a:link {
   background-size: cover;
   background-position: center;
 }
+
 
 .hero .text {
   margin: 0 auto;

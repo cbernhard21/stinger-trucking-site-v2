@@ -194,7 +194,7 @@ a:link {
 
 .hidden {
   display: none;
-} 
+}
 
 /* HOME PAGE */
 .hero {
@@ -207,7 +207,6 @@ a:link {
   background-size: cover;
   background-position: center;
 }
-
 
 .hero .text {
   margin: 0 auto;
@@ -254,8 +253,20 @@ a:link {
   }
 }
 
-.hero .btn {
+/* .hero .btn {
   margin-right: 3rem;
+} */
+
+.button-container {
+  display: flex;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .button-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ABOUT SECTION */
@@ -388,4 +399,47 @@ a:link {
   color: var(--black);
   border: 1px solid var(--black);
   cursor: pointer;
+}
+
+/*******************************
+Gallery
+*******************************/
+.photo-grid {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  opacity: 0.7;
+  transition: all 500ms;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.35rem 1.175rem, rgba(2, 8, 20, 0.1) 0px 0.175rem 0.5rem;
+  transform: translateY(-3px) scale(1.05);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tall {
+  grid-row: span 2 / auto;
+}
+
+.wide {
+  grid-column: span 2 / auto;
 }

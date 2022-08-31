@@ -1,0 +1,82 @@
+{
+  "images": [
+    {
+      "src": "../images/gallery/thumbnails/truck-8-min.jpg",
+      "alt": "This is a truck",
+      "class": "wide tall"
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-2-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-3-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-4-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-5-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-6-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-7-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-1-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-9-min.jpg",
+      "alt": "This is a truck"
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-10-min.jpg",
+      "alt": "This is a truck",
+      "class": "tall"
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-11-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-12-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-13-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-14-min.jpg",
+      "alt": "This is a truck"
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-15-min.jpg",
+      "alt": "This is a truck",
+      "class": ""
+    },
+    {
+      "src": "../images/gallery/thumbnails/truck-16-min.jpg",
+      "alt": "This is a truck",
+      "class": "wide"
+    }
+  ]
+}

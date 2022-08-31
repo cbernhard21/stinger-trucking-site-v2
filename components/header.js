@@ -176,8 +176,7 @@ export function createHeader(phoneNumber) {
       .burger-move .bottom-line {
         transform: rotate(45deg) translate(-5px, -6px);
       }
-    }
-          
+    }         
   </style>
   
   <link rel="stylesheet" href="../styles/global.css" />
@@ -219,14 +218,16 @@ export function createHeader(phoneNumber) {
       const shadowRoot = this.attachShadow({ mode: 'open' });
       shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
 
-      //adds CSS class current to the page the user is currently on
-      const body = document.querySelector('body');
-      const allNavLinks = this.shadowRoot.querySelectorAll('.navLink');
-      allNavLinks.forEach((link) => {
-        if (body.id === link.innerText.toLowerCase()) {
-          link.classList.add('current');
+      //adds CSS class active to the page the user is currently on
+      const activePage = window.location.pathname;
+      const mainNavLinks = this.shadowRoot.querySelectorAll('nav a');
+      mainNavLinks.forEach(link => {
+        if(link.href.includes(`${activePage}`)){
+          console.log(activePage)
+          link.classList.add('active');
         }
-      });
+      })
+
 
       //controls the nav menu for smaller screens
       const burgerMenu = this.shadowRoot.querySelector('.burger-menu');

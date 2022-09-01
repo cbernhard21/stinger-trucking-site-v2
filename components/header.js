@@ -84,7 +84,7 @@ export function createHeader(phoneNumber) {
       list-style-type: none;
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      gap: 4rem;
     }
 
     @media screen and (max-width: 1150px) {
@@ -177,9 +177,12 @@ export function createHeader(phoneNumber) {
         transform: rotate(45deg) translate(-5px, -6px);
       }
     }         
+    .active {
+      color: var(--white);
+    }
   </style>
   
-  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/component-reset.css" />
   <header>
     <div class="logo-container">
       <a href="index.html">

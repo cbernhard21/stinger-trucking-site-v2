@@ -71,12 +71,12 @@
     {
       "src": "../images/gallery/thumbnails/truck-15-min.jpg",
       "alt": "This is a truck",
-      "class": ""
+      "class": "wide"
     },
     {
       "src": "../images/gallery/thumbnails/truck-16-min.jpg",
       "alt": "This is a truck",
-      "class": "wide"
+      "class": ""
     }
   ]
 }

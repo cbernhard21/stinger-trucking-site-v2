@@ -4,17 +4,17 @@ export function createFooter(phoneNumber) {
   footerTemplate.innerHTML = `
 
         <style>
-            footer {
-                background-color: var(--black);
-                color: var(--white);
-                padding: 2rem 0;
-                font-size: 1.6rem;
-                width: 100%;
-                text-align: center;
-            }
+          footer {
+              background-color: var(--black);
+              color: var(--white);
+              padding: 2rem 0;
+              font-size: 1.6rem;
+              width: 100%;
+              text-align: center;
+          }
         </style>
 
-        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/component-reset.css" />
         <footer>
             <p>Stinger Trucking Company</p>
             <p>${phoneNumber}</p>

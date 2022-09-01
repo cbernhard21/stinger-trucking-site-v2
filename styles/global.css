@@ -8,6 +8,7 @@
   --black: #141414;
   --white: #fdfdfd;
   --faded-white: rgba(255, 255, 255, 0.5);
+  --grey: #dfdfdf;
   --accent: #1a9bf0;
   /* --yellow: #eef112; */
   /* --yellow: #f7d008; */
@@ -196,7 +197,25 @@ a:link {
   display: none;
 }
 
-/* HOME PAGE */
+.title-section {
+  background-color: var(--faded-white);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section h1 {
+  font-size: 8.6rem;
+  color: var(--black);
+}
+
+
+
+
+/*******************
+HOME PAGE 
+*******************/
 .hero {
   display: flex;
   flex-direction: column;
@@ -253,10 +272,6 @@ a:link {
   }
 }
 
-/* .hero .btn {
-  margin-right: 3rem;
-} */
-
 .button-container {
   display: flex;
   gap: 3rem;
@@ -280,6 +295,14 @@ a:link {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .about,
+  .services {
+
+    font-size: 1.6rem;
+  }
+}
+
 .about {
   background-image: url(../images/truck-2-min.jpg);
 }
@@ -294,6 +317,12 @@ a:link {
 .text-box h2 {
   margin-bottom: 0.75rem;
   font-size: 3.6rem;
+}
+
+@media screen and (max-width: 500px) {
+  .text-box h2 {
+    font-size: 3rem;
+  }
 }
 
 .text-box p {
@@ -318,6 +347,12 @@ a:link {
 
 .services h3 {
   font-size: 3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .services h3 {
+    font-size: 2.5rem;
+  }
 }
 
 .services .text-box p {
@@ -401,45 +436,5 @@ a:link {
   cursor: pointer;
 }
 
-/*******************************
-Gallery
-*******************************/
-.photo-grid {
-  max-width: 1600px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-auto-rows: 250px;
-  grid-auto-flow: dense;
-  gap: 2rem;
-}
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  height: 100%;
-  width: 100%;
-  border-radius: 4px;
-  opacity: 0.7;
-  transition: all 500ms;
-  overflow: hidden;
-  object-fit: cover;
-}
 
-.card:hover {
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.35rem 1.175rem, rgba(2, 8, 20, 0.1) 0px 0.175rem 0.5rem;
-  transform: translateY(-3px) scale(1.05);
-  opacity: 1;
-  cursor: pointer;
-}
-
-.tall {
-  grid-row: span 2 / auto;
-}
-
-.wide {
-  grid-column: span 2 / auto;
-}

@@ -210,6 +210,12 @@ a:link {
   color: var(--black);
 }
 
+@media screen and (max-width: 770px) {
+  .title-section h1 {
+    font-size: 6rem;
+  }
+}
+
 
 
 

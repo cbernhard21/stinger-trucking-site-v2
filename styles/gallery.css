@@ -2,6 +2,7 @@
 Photo Gallery Page Style Sheet
 *******************************/
 .photo-grid {
+    width: 95%;
     max-width: 1600px;
     margin: 0 auto;
     padding: 3rem;
@@ -11,6 +12,13 @@ Photo Gallery Page Style Sheet
     grid-auto-rows: 250px;
     grid-auto-flow: dense;
     gap: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 2rem;
+    }
   }
   
   .card {
@@ -43,5 +51,12 @@ Photo Gallery Page Style Sheet
     .wide {
       grid-column: span 2 / auto;
     }
+  }
+
+  @media screen and (min-width: 700px) {
+    .tall {
+      grid-row: span 2 / auto;
+    }
+    
   }
   

@@ -222,15 +222,17 @@ export function createHeader(phoneNumber) {
       shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
 
       //adds CSS class active to the page the user is currently on
-      const activePage = window.location.pathname;
+      let activePage = window.location.pathname;
+      if(activePage === '/') {
+        activePage = '/index.html';
+      }
+      
       const mainNavLinks = this.shadowRoot.querySelectorAll('nav a');
       mainNavLinks.forEach(link => {
         if(link.href.includes(`${activePage}`)){
-          console.log(activePage)
           link.classList.add('active');
         }
-      })
-
+      });
 
       //controls the nav menu for smaller screens
       const burgerMenu = this.shadowRoot.querySelector('.burger-menu');

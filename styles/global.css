@@ -216,16 +216,13 @@ a:link {
   }
 }
 
-
-
-
 /*******************
 HOME PAGE 
 *******************/
 .hero {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url(../images/truck-1-min.jpg);
+  background-image: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url(../images/truck-1-min.jpg);
   min-height: 85vh;
   align-self: center;
   background-repeat: no-repeat;
@@ -304,7 +301,6 @@ HOME PAGE
 @media screen and (max-width: 500px) {
   .about,
   .services {
-
     font-size: 1.6rem;
   }
 }
@@ -441,6 +437,3 @@ HOME PAGE
   border: 1px solid var(--black);
   cursor: pointer;
 }
-
-
-

@@ -13,13 +13,45 @@
       <header-component></header-component>
     </div>
     <main class="text-black">
-      <h1>Contact Page</h1>
+      <div class="title-section">
+        <h1>Contact Us</h1>
+      </div>
 
-      <p>ideas to add here</p>
-      <p>a google map of where you a located</p>
-      <p>address, phone number, e-mail address</p>
-      <p>basically every where possible a potential customer can contact you</p>
+      <!-- CONTACT SECTION STYLES ARE FOUND IN THE GLOBAL SHEET -->
+      <section class="contact">
+        <div class="container">
+          <!-- <h2 class="text-inter light">Contact Us</h2> -->
+          <p>Any questions you have, we’ll answer within 8 hours.</p>
+
+          <form class="contact-form" action="https://formspree.io/f/xeqdqnvw" method="POST" id="my-form">
+            <!-- name container -->
+            <div class="form-group flex flex-col">
+              <input type="text" id="name" class="input" name="name" required />
+              <label for="name" class="contact-label">Your Name</label>
+            </div>
+
+            <!-- email container -->
+            <div class="form-group flex flex-col">
+              <input type="email" id="email" class="input" name="email" required />
+              <label for="email" class="contact-label">Email Address</label>
+            </div>
+
+            <!-- message container -->
+            <div class="form-group flex flex-col">
+              <textarea id="message" class="message" cols="30" rows="10" name="message" required></textarea>
+              <label for="message" class="message-label">Message</label>
+            </div>
+            <!-- hidden field to trap bots -->
+            <input type="text" name="_gotcha" class="hidden" />
+            <!-- form submit button -->
+            <button type="submit" class="btn contact-btn" id="my-form-button">Submit</button>
+          </form>
+          <!-- form submitt display message -->
+          <p class="message-container"></p>
+        </div>
+      </section>
     </main>
+    <footer-component></footer-component>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

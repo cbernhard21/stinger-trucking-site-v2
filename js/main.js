@@ -18,3 +18,7 @@ if (path === '/photos.html') {
 if (path === '/index.html') {
   handleContactForm();
 }
+
+if (path === '/contact.html') {
+  handleContactForm();
+}

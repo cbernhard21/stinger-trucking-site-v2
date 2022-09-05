@@ -7,7 +7,7 @@ export function createFooter(phoneNumber) {
           footer {
             width: 95%;
             margin: 0 auto;
-            padding: 4rem 0;
+            padding: 3rem 0;
             font-size: 1.4rem;
             background-color: var(--black);
             color: var(--faded-white);
@@ -28,6 +28,7 @@ export function createFooter(phoneNumber) {
           a:link {
             color: var(--faded-white);
             text-decoration: none;
+            transition: all .1s ease-in;
           }
 
           .footer-copyright {
@@ -74,7 +75,11 @@ export function createFooter(phoneNumber) {
           .phoneNumberContainer {
             text-decoration: none;
             display: block;
-          } 
+          }
+          
+          .footer-nav a:hover {
+            color: var(--white);
+          }
 
           @media screen and (max-width: 550px) {
             .hidden {
@@ -146,7 +151,7 @@ export function createFooter(phoneNumber) {
       yearContainer.innerText = year;
 
       let activePage = window.location.pathname;
-      if(activePage === '/' || activePage === '/index.html') {
+      if (activePage === '/' || activePage === '/index.html') {
         activePage = '#';
         homeLink.setAttribute('href', activePage);
       }

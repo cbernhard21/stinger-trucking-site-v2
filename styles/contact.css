@@ -3,36 +3,37 @@ CONTACT PAGE
 ******************************/
 
 .contact-page {
-    font-size: 1.6rem;
-    padding: 4rem 3rem;
+  font-size: 1.6rem;
+  padding: 4rem 3rem;
+  min-height: 60vh;
 }
-
-
 
 .contact-title {
-    height: auto;
-    padding: 4rem 0;
-  }
-  
-  .contact-wrapper {
-    display: flex;
-    padding: 0;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .contact-wrapper {
-      flex-direction: column;
-    }
-  }
-    
-  .contact-form-container {
-    flex: 1 1;
-  }
-
-  .contact-form-container p {
-    margin-bottom: 3.5rem;
+  height: auto;
+  padding: 4rem 0;
 }
-  
-  .contact-info-container {
-    flex: 1 1;
+
+.contact-wrapper {
+  display: flex;
+  padding: 0;
+  gap: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 2rem;
   }
+}
+
+.contact-form-container {
+  flex: 1 1;
+}
+
+.contact-form-container p {
+  margin-bottom: 3.5rem;
+}
+
+.contact-info-container {
+  flex: 1 1;
+}

@@ -11,7 +11,6 @@
   </head>
   <body id="contact">
     <div class="content">
-
       <div class="bg-black">
         <header-component></header-component>
       </div>
@@ -19,7 +18,7 @@
         <div class="title-section contact-title">
           <h1>Contact Us</h1>
         </div>
-  
+
         <!-- CONTACT PAGE STYLES ARE FOUND IN THE CONTACT SHEET -->
         <!-- FORM STYLES ARE FOUND IN THE GLOBAL SHEET -->
         <section class="contact-page">
@@ -32,13 +31,13 @@
                   <input type="text" id="name" class="input" name="name" required />
                   <label for="name" class="contact-label">Your Name</label>
                 </div>
-    
+
                 <!-- email container -->
                 <div class="form-group flex flex-col">
                   <input type="email" id="email" class="input" name="email" required />
                   <label for="email" class="contact-label">Email Address</label>
                 </div>
-    
+
                 <!-- message container -->
                 <div class="form-group flex flex-col">
                   <textarea id="message" class="message" cols="30" rows="10" name="message" required></textarea>
@@ -52,14 +51,14 @@
               <!-- form submitt display message -->
               <p class="message-container"></p>
             </div>
-  
+
             <div class="contact-info-container">
               <h2>Phone Number</h2>
               <a class="phoneNumberContainer" href="tel:${phoneNumber}"></a>
               <h2>Address</h2>
-              
+              <p>1234 Main St</p>
+              <p>Crossville, TN</p>
             </div>
-        
           </div>
         </section>
       </main>
@@ -67,7 +66,7 @@
         <footer-component></footer-component>
       </div>
     </div>
-    
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

@@ -6,52 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/global.css" type="text/css" />
+    <link rel="stylesheet" href="styles/contact.css" type="text/css" />
     <title>Stinger Trucking</title>
   </head>
   <body id="contact">
-    <div class="bg-black">
-      <header-component></header-component>
-    </div>
-    <main class="text-black">
-      <div class="title-section">
-        <h1>Contact Us</h1>
+    <div class="content">
+
+      <div class="bg-black">
+        <header-component></header-component>
       </div>
-
-      <!-- CONTACT SECTION STYLES ARE FOUND IN THE GLOBAL SHEET -->
-      <section class="contact">
-        <div class="container">
-          <!-- <h2 class="text-inter light">Contact Us</h2> -->
-          <p>Any questions you have, we’ll answer within 8 hours.</p>
-
-          <form class="contact-form" action="https://formspree.io/f/xeqdqnvw" method="POST" id="my-form">
-            <!-- name container -->
-            <div class="form-group flex flex-col">
-              <input type="text" id="name" class="input" name="name" required />
-              <label for="name" class="contact-label">Your Name</label>
-            </div>
-
-            <!-- email container -->
-            <div class="form-group flex flex-col">
-              <input type="email" id="email" class="input" name="email" required />
-              <label for="email" class="contact-label">Email Address</label>
-            </div>
-
-            <!-- message container -->
-            <div class="form-group flex flex-col">
-              <textarea id="message" class="message" cols="30" rows="10" name="message" required></textarea>
-              <label for="message" class="message-label">Message</label>
-            </div>
-            <!-- hidden field to trap bots -->
-            <input type="text" name="_gotcha" class="hidden" />
-            <!-- form submit button -->
-            <button type="submit" class="btn contact-btn" id="my-form-button">Submit</button>
-          </form>
-          <!-- form submitt display message -->
-          <p class="message-container"></p>
+      <main class="text-black">
+        <div class="title-section contact-title">
+          <h1>Contact Us</h1>
         </div>
-      </section>
-    </main>
-    <footer-component></footer-component>
+  
+        <!-- CONTACT PAGE STYLES ARE FOUND IN THE CONTACT SHEET -->
+        <!-- FORM STYLES ARE FOUND IN THE GLOBAL SHEET -->
+        <section class="contact-page">
+          <div class="container contact-wrapper">
+            <div class="contact-form-container">
+              <p>Email us any questions you may have.</p>
+              <form action="https://formspree.io/f/xeqdqnvw" method="POST" id="my-form">
+                <!-- name container -->
+                <div class="form-group flex flex-col">
+                  <input type="text" id="name" class="input" name="name" required />
+                  <label for="name" class="contact-label">Your Name</label>
+                </div>
+    
+                <!-- email container -->
+                <div class="form-group flex flex-col">
+                  <input type="email" id="email" class="input" name="email" required />
+                  <label for="email" class="contact-label">Email Address</label>
+                </div>
+    
+                <!-- message container -->
+                <div class="form-group flex flex-col">
+                  <textarea id="message" class="message" cols="30" rows="10" name="message" required></textarea>
+                  <label for="message" class="message-label">Message</label>
+                </div>
+                <!-- hidden field to trap bots -->
+                <input type="text" name="_gotcha" class="hidden" />
+                <!-- form submit button -->
+                <button type="submit" class="btn contact-btn" id="my-form-button">Submit</button>
+              </form>
+              <!-- form submitt display message -->
+              <p class="message-container"></p>
+            </div>
+  
+            <div class="contact-info-container">
+              <h2>Phone Number</h2>
+              <a class="phoneNumberContainer" href="tel:${phoneNumber}"></a>
+              <h2>Address</h2>
+              
+            </div>
+        
+          </div>
+        </section>
+      </main>
+      <footer-component></footer-component>
+    </div>
+    
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

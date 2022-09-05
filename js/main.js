@@ -9,7 +9,7 @@ const path = window.location.pathname;
 // RUN ALL GLOBAL FUNCTIONS AFTER PAGE LOADS
 createHeader(insertPhoneNumber());
 createFooter(insertPhoneNumber());
-insertPhoneNumber();
+// insertPhoneNumber();
 
 if (path === '/photos.html') {
   displayGallery();

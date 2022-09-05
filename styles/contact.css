@@ -1,0 +1,38 @@
+/*****************************
+CONTACT PAGE
+******************************/
+
+.contact-page {
+    font-size: 1.6rem;
+    padding: 4rem 3rem;
+}
+
+
+
+.contact-title {
+    height: auto;
+    padding: 4rem 0;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .contact-wrapper {
+      flex-direction: column;
+    }
+  }
+    
+  .contact-form-container {
+    flex: 1 1;
+  }
+
+  .contact-form-container p {
+    margin-bottom: 3.5rem;
+}
+  
+  .contact-info-container {
+    flex: 1 1;
+  }

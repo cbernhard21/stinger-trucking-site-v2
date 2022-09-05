@@ -104,12 +104,12 @@ export function createHeader(phoneNumber) {
     }
 
     .phoneNumberContainer {
+      display: block;
+      color: var(--white);
       text-align: center;
       margin: -2.5rem;
       transform: translateX(3.5rem);
-    }  
-
-
+    } 
 
     /* BURGER MENU SETUP NO VISIABLE ON LARGE SCREENS */
     .burger-menu {
@@ -192,7 +192,8 @@ export function createHeader(phoneNumber) {
 
     <div class="truck-logo-container">
       <img src="../images/logo-truck-header.png" alt="Truck Logo" />
-      <p class="phoneNumberContainer">${phoneNumber}</p>
+      <a class="phoneNumberContainer" href="tel:${phoneNumber}">${phoneNumber}</a>
+      <!-- <p class="phoneNumberContainer">${phoneNumber}</p> -->
     </div>
 
     <div class="nav-container">

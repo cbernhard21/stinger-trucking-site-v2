@@ -19,10 +19,43 @@ CONTACT PAGE
   gap: 5rem;
 }
 
+.contact-page .btn {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact-page .btn:hover {
+  background-color: var(--white);
+  border-color: var(--accent);
+}
+
+.call-container {
+  margin-bottom: 2rem;
+}
+
+.call-container h2 {
+  font-size: 5rem;
+  font-weight: var(--fw-400);
+  letter-spacing: 4px;
+}
+
+a.phone-number {
+  font-size: 3rem;
+  font-weight: var(--fw-400);
+  color: var(--accent);
+}
+
 @media screen and (max-width: 800px) {
   .contact-wrapper {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .contact-page .btn {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
   }
 }
 

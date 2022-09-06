@@ -19,13 +19,18 @@
           <h1>Contact Us</h1>
         </div>
 
-        <!-- CONTACT PAGE STYLES ARE FOUND IN THE CONTACT SHEET -->
-        <!-- FORM STYLES ARE FOUND IN THE GLOBAL SHEET -->
-        <section class="contact-page">
-          <div class="container contact-wrapper">
-            <div class="contact-form-container">
-              <p>Email us any questions you may have.</p>
-              <form action="https://formspree.io/f/xeqdqnvw" method="POST" id="my-form">
+        <section class="contact contact-page">
+          <div class="container">
+            <div class="call-container">
+              <h2>Call Us</h2>
+              <a class="phoneNumberContainer phone-number"></a>
+            </div>
+
+            <div class="call-container">
+              <h2>E-mail Us</h2>
+
+              <p>Send us a message and we'll get back to you within a few hours.</p>
+              <form class="contact-form" action="https://formspree.io/f/xeqdqnvw" method="POST" id="my-form">
                 <!-- name container -->
                 <div class="form-group flex flex-col">
                   <input type="text" id="name" class="input" name="name" required />
@@ -50,14 +55,6 @@
               </form>
               <!-- form submitt display message -->
               <p class="message-container"></p>
-            </div>
-
-            <div class="contact-info-container">
-              <h2>Phone Number</h2>
-              <a class="phoneNumberContainer" href="tel:${phoneNumber}"></a>
-              <h2>Address</h2>
-              <p>1234 Main St</p>
-              <p>Crossville, TN</p>
             </div>
           </div>
         </section>

@@ -16,7 +16,7 @@ export function intersectionObserver() {
 
     const observerShort = new IntersectionObserver(callback, {
         rooMargin: '-300px',
-        threshold: 0
+        threshold: .4
     });
 
     const observerLong = new IntersectionObserver(callback, {

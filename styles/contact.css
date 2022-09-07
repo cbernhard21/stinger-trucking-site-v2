@@ -18,8 +18,8 @@ CONTACT PAGE
     height: auto;
     padding: 2rem 0;
   }
-
  }
+
 .contact-wrapper {
   display: flex;
   padding: 0;
@@ -55,10 +55,6 @@ a.phone-number {
 .image-container {
   flex: 1 1;
   align-self: center;
-}
-
-.business-card {
-  max-width: 500px;
 }
 
 @media screen and (max-width: 950px) {

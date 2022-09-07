@@ -2,32 +2,26 @@ export function intersectionObserver() {
     const shortBox = document.querySelectorAll('.short');
     const longBox = document.querySelectorAll('.long');
 
-    let options = {
-        rootMargin: '-300px',
-        thresold: .5
-    };
-
-
     const callback = (entries, observer) => {
         entries.forEach(entry => {
             if(!entry.isIntersecting){
                 return
             }else {
                 entry.target.classList.add('fade-in');
-                entry.target.classList.add('slide-in');
+                entry.target.classList.add('slide-up');
                 observer.unobserve(entry.target);
             };
         });
     }
 
     const observerShort = new IntersectionObserver(callback, {
-        rooMargin: '-100px',
-        threshold: .5
+        rooMargin: '-300px',
+        threshold: 0
     });
 
     const observerLong = new IntersectionObserver(callback, {
-        rooMargin: '-300px',
-        threshold: .1
+        rooMargin: '0px',
+        threshold: 0
     });
 
     shortBox.forEach(box => {

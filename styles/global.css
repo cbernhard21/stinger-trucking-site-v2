@@ -332,23 +332,16 @@ HOME PAGE
   transition: .8s all ease-in-out;
 }
 
-
-
-.slide-from-left {
-  transform: translateX(-50%);
-}
-
-.slide-from-right {
-  transform: translateX(50%);
+.slide-down {
+  transform: translateY(50%);
 }
 
 .text-box.fade-in {
   opacity: 1;
 }
 
-.slide-from-left.slide-in,
-.slide-from-right.slide-in{
-  transform: translateX(0);
+.slide-up{
+  transform: translateY(0);
 }
 
 

@@ -328,6 +328,27 @@ HOME PAGE
   align-self: flex-start;
   padding: 2rem;
   font-weight: 300;
+  opacity: 0;
+  transition: .8s all ease-in-out;
+}
+
+
+
+.slide-from-left {
+  transform: translateX(-50%);
+}
+
+.slide-from-right {
+  transform: translateX(50%);
+}
+
+.text-box.fade-in {
+  opacity: 1;
+}
+
+.slide-from-left.slide-in,
+.slide-from-right.slide-in{
+  transform: translateX(0);
 }
 
 .text-box h2 {

@@ -1,12 +1,14 @@
 export function intersectionObserver() {
-    const textBox = document.querySelectorAll('.text-box');
+    const shortBox = document.querySelectorAll('.short');
+    const longBox = document.querySelectorAll('.long');
 
     let options = {
         rootMargin: '-300px',
         thresold: .5
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+
+    const callback = (entries, observer) => {
         entries.forEach(entry => {
             if(!entry.isIntersecting){
                 return
@@ -16,11 +18,25 @@ export function intersectionObserver() {
                 observer.unobserve(entry.target);
             };
         });
-    }, options)
+    }
 
-    textBox.forEach(box => {
-        observer.observe(box);
-    })
+    const observerShort = new IntersectionObserver(callback, {
+        rooMargin: '-100px',
+        threshold: .5
+    });
+
+    const observerLong = new IntersectionObserver(callback, {
+        rooMargin: '-300px',
+        threshold: .1
+    });
+
+    shortBox.forEach(box => {
+        observerShort.observe(box)
+    });
+
+    longBox.forEach(box => {
+        observerLong.observe(box)
+    });
 
 
 }

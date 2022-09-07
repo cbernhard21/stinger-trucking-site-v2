@@ -13,6 +13,13 @@ CONTACT PAGE
   padding: 4rem 0;
 }
 
+@media screen and (max-width: 400px) {
+  .contact-title {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+ }
 .contact-wrapper {
   display: flex;
   padding: 0;
@@ -30,7 +37,7 @@ CONTACT PAGE
 }
 
 .call-container {
-  margin-bottom: 2rem;
+  flex: 1 1;
 }
 
 .call-container h2 {
@@ -45,7 +52,16 @@ a.phone-number {
   color: var(--accent);
 }
 
-@media screen and (max-width: 800px) {
+.image-container {
+  flex: 1 1;
+  align-self: center;
+}
+
+.business-card {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 950px) {
   .contact-wrapper {
     flex-direction: column;
     gap: 2rem;
@@ -59,7 +75,7 @@ a.phone-number {
   }
 }
 
-.contact-form-container {
+/* .contact-form-container {
   flex: 1 1;
 }
 
@@ -69,4 +85,4 @@ a.phone-number {
 
 .contact-info-container {
   flex: 1 1;
-}
+} */

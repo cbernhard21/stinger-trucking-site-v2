@@ -65,6 +65,10 @@ export function createFooter(phoneNumber) {
             margin-bottom: 1rem;
           }
 
+          img {
+            opacity: .6;
+          }
+
           .footer-copyright {
             display: flex;
             flex-direction: column;
@@ -113,8 +117,7 @@ export function createFooter(phoneNumber) {
           <div class="footer-contact">
             <h2>Contact Us</h2>
             <a class="phoneNumberContainer" href="tel:${phoneNumber}">${phoneNumber}</a>
-            <p>Address</p>
-            <p>Email</p>
+            <p>shawngarner@live.com</p>
           </div>
 
           <div class="footer-copyright">   

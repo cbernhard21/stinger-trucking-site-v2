@@ -301,7 +301,9 @@ HOME PAGE
   }
 }
 
-/* ABOUT SECTION */
+/*************************
+ABOUT SECTION 
+****************************/
 .about,
 .services {
   min-height: 80vh;
@@ -370,7 +372,9 @@ HOME PAGE
   font-size: 1.6rem;
 }
 
-/* SERVICES SECTION */
+/**************************
+SERVICES SECTION 
+***************************/
 .services {
   background-image: url(../images/truck-10-min.jpg);
 }

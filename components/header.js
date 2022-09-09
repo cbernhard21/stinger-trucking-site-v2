@@ -156,7 +156,7 @@ export function createHeader(phoneNumber) {
         transition: transform .5s ease-out;
       }
       ul {
-        height: 90vh;
+        height: 75vh;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;

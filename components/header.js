@@ -31,6 +31,19 @@ export function createHeader(phoneNumber) {
   headerTemplate.innerHTML = `
   <style>
 
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
     header {
       width: 95%;
       margin: 0 auto;
@@ -181,8 +194,7 @@ export function createHeader(phoneNumber) {
       color: var(--white);
     }
   </style>
-  
-  <link rel="stylesheet" href="../styles/component-reset.css" />
+
   <header>
     <div class="logo-container">
       <a href="index.html">

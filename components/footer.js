@@ -4,11 +4,27 @@ export function createFooter(phoneNumber) {
   footerTemplate.innerHTML = `
 
         <style>
+          *,
+          *::after,
+          *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+
+          img {
+            max-width: 100%;
+            display: block;
+          }
+
+
           footer {
             width: 95%;
             margin: 0 auto;
             padding: 3rem 0;
             font-size: 1.4rem;
+            font-weight: var(--fw-300);
+            letter-spacing: 1.4px;
             background-color: var(--black);
             color: var(--faded-white);
             display: flex;
@@ -108,12 +124,8 @@ export function createFooter(phoneNumber) {
               margin-bottom: 2rem;
             }
           }
-
         </style>
-
-        <link rel="stylesheet" href="../styles/component-reset.css" />
-        <footer>
-        
+        <footer>        
           <div class="footer-contact">
             <h2>Contact Us</h2>
             <a class="phoneNumberContainer" href="tel:${phoneNumber}">${phoneNumber}</a>

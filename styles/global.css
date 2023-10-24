@@ -11,6 +11,7 @@
   --grey: #dfdfdf;
   --accent: #1a9bf0;
   --yellow: #f7d207;
+  --red: #7c0101;
   --ff-inter: 'Inter', sans-serif;
   --ff-oswald: 'Oswald', sans-serif;
   --fw-300: 300;
@@ -231,6 +232,21 @@ a.phoneNumberContainer {
 }
 
 /*******************
+UTILITIES 
+*******************/
+.alert {
+  background-color: var(--red);
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.red {
+  color: var(--red);
+}
+
+/*******************
 HOME PAGE 
 *******************/
 .hero {
@@ -342,7 +358,7 @@ ABOUT SECTION
   opacity: 1;
 }
 
-.slide-up{
+.slide-up {
   transform: translateY(0);
 }
 

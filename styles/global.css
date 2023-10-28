@@ -12,6 +12,7 @@
   --accent: #1a9bf0;
   --yellow: #f7d207;
   --red: #7c0101;
+  --blue: #03036d;
   --ff-inter: 'Inter', sans-serif;
   --ff-oswald: 'Oswald', sans-serif;
   --fw-300: 300;
@@ -235,15 +236,20 @@ a.phoneNumberContainer {
 UTILITIES 
 *******************/
 .alert {
-  background-color: var(--red);
+  background-color: var(--blue);
   padding: 0.5rem 0;
   font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
 }
+@media screen and (max-width: 770px) {
+  .alert {
+    font-size: 1.5rem;
+  }
+}
 
-.red {
-  color: var(--red);
+.blue {
+  color: var(--blue);
 }
 
 /*******************
